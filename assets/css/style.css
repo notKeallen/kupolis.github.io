@@ -1,0 +1,635 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Specimen';
+  color: #fff;
+}
+@font-face{
+	src: url('../fonts/Righteous/Righteous-Regular.ttf');
+	font-family:'Righteous';
+}
+@font-face{
+	src: url('../fonts/Specimen/PublicSans-Regular.ttf');
+	font-family:'Specimen';
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+header{
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
+  transition: 2s ease-in-out;
+  position: fixed;
+  z-index: 1000;
+}
+h1, h2{
+  font-family:'Righteous';
+}
+#background {
+  background-image: url(../img/pozadina.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  width: 70%;
+  margin: 0px auto;
+}
+#about-us-link{
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+.alignment{
+  text-align: center;
+}
+nav {
+  width: 60%;
+  float: right;
+  text-align: right;
+  color:#00172d;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+nav ul li a {
+  color: #00172d;
+}
+
+nav ul li a:hover {
+  color: #5c93ab;
+}
+.logo {
+  width: 20%;
+  float: left;
+}
+.logo img{
+  width: 70%;
+}
+#arrows{
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 45px;
+  cursor: pointer;
+  transition: visibility 0s, opacity 2s ease;
+  background-image: linear-gradient(to top, #00172d, transparent);
+}
+.arrows-animation{
+  animation: upndown .8s ease-in-out infinite;
+}
+.arrows-animation.hide{
+  display: none;
+  opacity: 0;
+}
+#heading {
+  padding-top: 25%;
+  color: #fff;
+  font-size: 50px;
+  text-align: left;
+}
+
+#heading p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.button {
+  padding: 1%;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  float: left;
+  background-color: rgba(4,52,84,0.5);
+  box-shadow: 3px 3px 0px 0px #043454;
+}
+.button:hover{
+  background-color: #043454;
+  box-shadow:none;
+}
+.content {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+}
+#about-us{
+  background-image: linear-gradient( to bottom, #00172d, #14324b, #2b516a, #43718a, #5c93ab);
+  padding-bottom: 100px;
+  padding-top: 120px;
+}
+#about-us-img {
+  position: relative;
+  top: -20px;
+  left: -15px;
+}
+
+#about-us-img2 {
+  position: relative;
+  top: -20px;
+  left: 15px;
+}
+
+.image {
+  width: 49.5%;
+  float: left;
+  background-color: #5c93ab;
+  padding-right: 0.5%;
+}
+
+.text {
+  width: 40%;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 18px;
+  word-spacing: 3px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.boxes {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+.boxes-align {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 40%;
+  float: left;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box span {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#models {
+  width: 100%;
+  background-color: #043454;
+  height: 1000px;
+}
+
+.model {
+  width: 65%;
+  float: left;
+  background-image: linear-gradient(to right, #043454, #1e4a68, #295572, #497992, #578ca5, #5c93ab);
+}
+
+.model button {
+  color: black;
+}
+
+.specs {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.spec{
+  width: 22%;
+  text-align: center;
+}
+.spec img{
+  width: 100%;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front h3{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.flip-card-back h3{
+  margin-top: 10px;
+}
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+#contact {
+  height: 750px;
+  background-image: linear-gradient(to bottom, #043454, #093858, #134060, #1e4c6b, #2c5b79, #437692, #5c93ab);
+}
+
+.contact-information {
+  width: 20%;
+  height: 300px;
+  float: left;
+  padding: 5%;
+  background-color: rgba(255,255,255,0.1);
+}
+.contact-information h2{
+  font-size: 35px;
+}
+footer{
+  background-color: #fff;
+  height: 175px;
+  width: 100%;
+  z-index: 10;
+  margin-top: 150px;
+  border-top: 2px solid #043454;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-banners{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .logo{
+  width: 50%;
+}
+footer p{
+  color: #043454;
+  margin-top: 15px;
+  transition: 0.3s ease-in-out;
+}
+footer h3{
+  color: #043454;
+}
+.footer-about-us p:hover{
+  transform: scale(1.1);
+}
+.social{
+  margin-top: 15px;
+  font-size: 25px;
+}
+.copyright{
+  text-align: center;
+}
+.copyright p{
+  color:#043454;
+}
+.contact-form {
+  width: 60%;
+  height: 300px;
+  padding: 5%;
+  float: left;
+  background-color: rgba(255,255,255,0.2);
+  margin-bottom: 150px;
+}
+
+.headings {
+  font-size: 35px;
+}
+
+.picture {
+  width: 70%;
+  float: left;
+  height: 500px;
+}
+
+.model-spec {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #043454;
+}
+
+#picture {
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+#text {
+  width: 26%;
+  float: left;
+  height: 500px;
+  padding: 2%;
+}
+
+.model button.active {
+  box-shadow: -0px 2px 0px 0px #fff;
+}
+
+.model .buttons {
+  color: #fff;
+  background-color: transparent;
+}
+
+.buttons {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  float: left;
+  height: 100px;
+  width: 15%;
+}
+
+.buttons:hover {
+  box-shadow: 0px -2px 0px 0px #fff;
+  cursor: pointer;
+}
+
+#title {
+  color: #fff;
+  font-size: 20px;
+}
+
+#description {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: space-between;
+}
+#subject {
+  width: 100%;
+  height: 35px;
+}
+
+#email {
+  width: 100%;
+  height: 35px;
+}
+input, textarea {
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  font-size: 15px;
+  padding: 0.5%;
+  resize: none;
+}
+input:focus, textarea:focus {
+  outline: none;
+}
+.field-holder{
+  position:relative;
+  width: 49%;
+}
+label{
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: text;
+  width: 100%;
+  transition: .3s ease-in-out;
+  
+}
+input:focus + label,
+input:valid +label{
+  font-size: 20px;
+  top: -25px;
+  pointer-events: none;
+}
+::placeholder {
+  color: #fff;
+  font-size: 15px;
+}
+
+.text-form {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#tekst {
+  width: 100%;
+  height: 100px;
+}
+
+#send{
+  color: #fff;
+  padding: 1%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  transition: .6s ease-in-out;
+}
+#send:hover{
+  background-color: #fff;
+  color: #2c5b79;
+}
+.kontakti {
+  margin-top: 5%;
+}
+
+.proba {
+  width: 100%;
+  height: 100px;
+}
+
+.proba1 {
+  width: 20%;
+  float: left;
+  background-color: #043454;
+  padding-left: 15%;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.awesome {
+  font-size: 20px;
+  color: #5c93ab;
+  margin: 0;
+}
+
+.awesome-contacts {
+  margin-right: 10px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.awesome-footer{
+  color: #043454;
+  margin-right: 10px;
+}
+.contact-description p {
+  margin-top: 30px;
+}
+
+.model-description p {
+  width: 50%;
+  float: left;
+  margin-top: 30px;
+}
+#specification-link{
+  margin-top: 50px;
+}
+#specification{
+  text-align: center;
+}
+.btnScrollToTop {
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  width: 40px;
+  border: 2px solid #fff;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 2s ease;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(4, 52, 84, 0.6);
+}
+.btnScrollToTop.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btnScrollToTop:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all .1s ease-in-out;
+  animation: pulsatehover 1s infinite;
+}
+footer p{
+  color: black;
+}
+@keyframes upndown{
+  0% {transform:scale(1.0); opacity: 1;}
+  50% {bottom: 1.5%; transform:scale(0.9); opacity: 0.6;}
+  100% {transform:scale(1.0); opacity: 1;}
+}
+@keyframes pulsatehover {
+  0%   { opacity: 1; }
+  50%  { opacity: .4; transform:scale(1.2); }
+  100% { opacity: 1; }
+}
+.landing-from-left {
+  opacity: 0;
+  transform: translateX(-20%);
+  animation: landFromLeft 1s ease-out forwards;
+}
+
+@keyframes landFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes landFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.landing-from-right {
+  opacity: 0;
+  transform: translateX(20%);
+  animation: landFromRight 1s ease-out forwards;
+}
+
+@keyframes landFromDown {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing-from-down {
+  opacity: 0;
+  transform: translateY(30%);
+  animation: landFromDown 1s ease-out forwards;
+}
+@keyframes landFromUp {
+  from {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.landing-from-up {
+  opacity: 0;
+  transform: translateY(-30%);
+  animation: landFromUp 1s ease-out forwards;
+}
+.invalid{
+  border-bottom: 2px solid red;
+}
