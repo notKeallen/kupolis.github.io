@@ -1,8 +1,8 @@
 const pictures = [
-  { url: "assets/img/m5.jpg", title: "Kupolis M5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 5m", height: "Visina: 4m", surface:"Povrsina: 38m", elements:"Elemenat: 120" },
-  { url: "assets/img/m6.jpg", title: "Kupolis M6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 6m", height: "Visina: 5m", surface:"Povrsina: 43m", elements:"Elemenat: 150" },
-  { url: "assets/img/m7.jpg", title: "Kupolis M7", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 7m", height: "Visina: 6m", surface:"Povrsina: 48m", elements:"Elemenat: 180" },
-  { url: "assets/img/m8.jpg", title: "Kupolis M8", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 8m", height: "Visina: 7m", surface:"Povrsina: 55m", elements:"Elemenat: 210" }
+  { url: "assets/img/m5.png", title: "Kupolis M5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 5m", height: "Visina: 4m", surface:"Povrsina: 38m", elements:"Elemenat: 120" },
+  { url: "assets/img/m6.png", title: "Kupolis M6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 6m", height: "Visina: 5m", surface:"Povrsina: 43m", elements:"Elemenat: 150" },
+  { url: "assets/img/m7.png", title: "Kupolis M7", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 7m", height: "Visina: 6m", surface:"Povrsina: 48m", elements:"Elemenat: 180" },
+  { url: "assets/img/m8.png", title: "Kupolis M8", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 8m", height: "Visina: 7m", surface:"Povrsina: 55m", elements:"Elemenat: 210" }
 ];
 
 const buttons = document.querySelectorAll(".model button");
@@ -34,7 +34,7 @@ buttons.forEach((button) => {
     button.classList.add("active");
   });
 });
-
+/*
 const btnScrollToTop = document.querySelector(".btnScrollToTop");
 
 // scroll to top of page when button clicked
@@ -45,7 +45,7 @@ btnScrollToTop.addEventListener("click", e => {
     behavior: "smooth"
   });
 });
-
+*/
 // toggle 'scroll to top' based on scroll position
 window.addEventListener('scroll', e => {
   if (window.scrollY > 275) {
@@ -64,16 +64,6 @@ window.addEventListener('scroll', e => {
     arrows.classList.remove('hide');
   }
 });
-
-/*const header = document.querySelector(".header")
-
-window.addEventListener('scroll', e => {
-  if (window.scrollY > 10) {
-    header.classList.add('moveupndown');
-  } else {
-    
-  }
-});*/
 
 const animatedClassesLeft = ['.text', '#text', '.contact-information', '.proba1', '#heading'];
 
@@ -108,7 +98,7 @@ window.addEventListener('scroll', e => {
   window.previousScrollY = scrollY;
 });
 
-const animatedClassesRight = ['.image', '.box', '.buttons','.picture','.contact-form'];
+const animatedClassesRight = ['.image', '.buttons','.picture','.contact-form'];
 
 function animateOnScrollRight() {
   animatedClassesRight.forEach(className => {
@@ -128,7 +118,7 @@ function animateOnScrollRight() {
   });
 }
 
-const animatedClassesUp= ['.footer'];
+const animatedClassesUp= [];
 
 function animateOnScrollUp() {
   animatedClassesUp.forEach(className => {
@@ -148,7 +138,7 @@ function animateOnScrollUp() {
   });
 }
 
-const animatedClassesDown = ['.spec', '#about-us-link'];
+const animatedClassesDown = ['.spec', '#about-us-link', '.box'];
 
 function animateOnScrollDown() {
   animatedClassesDown.forEach(className => {
@@ -224,7 +214,35 @@ subjectInput.addEventListener('input', function() {
   }
 });
 
+window.AcquaintedWidgetDomain = 'https://getacquainted.co';
+    window.AcquaintedWidgetId = 'ff153c83-f590-4e95-bd01-b89025f64e4f';
+    var s = document.createElement('script'); 
+    s.src = AcquaintedWidgetDomain + '/js/widget-loader.js';
+    s.async = true;
+    document.body.appendChild(s);
 
+    const header = document.querySelector('header');
+    let lastScrollPosition = 0;
+    let hasScrolled = false;
+
+    window.addEventListener('scroll', () => {
+      // Check if the user has scrolled at least once
+      if (!hasScrolled) {
+        hasScrolled = true;
+        return;
+      }
+
+      // Check if the user is scrolling up or down
+      const currentScrollPosition = window.pageYOffset;
+      if (currentScrollPosition > lastScrollPosition) {
+        // Scrolling down - hide the header
+        header.classList.add('hide-header');
+      } else {
+        // Scrolling up - show the header
+        header.classList.remove('hide-header');
+      }
+      lastScrollPosition = currentScrollPosition;
+    });
 
 
 
