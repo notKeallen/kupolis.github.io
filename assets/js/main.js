@@ -45,16 +45,15 @@ btnScrollToTop.addEventListener("click", e => {
     behavior: "smooth"
   });
 });
-*/
 // toggle 'scroll to top' based on scroll position
-window.addEventListener('scroll', e => {
+/*window.addEventListener('scroll', e => {
   if (window.scrollY > 275) {
     btnScrollToTop.classList.add('show');
   } else {
     btnScrollToTop.classList.remove('show');
   }
 });
-
+*/
 const arrows = document.querySelector(".arrows-animation")
 
 window.addEventListener('scroll', e => {
