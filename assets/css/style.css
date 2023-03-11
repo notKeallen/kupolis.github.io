@@ -39,7 +39,7 @@ h1, h2{
 }
 #background {
   background-image: url(../img/pozadina.jpg);
-  background-size: cover;
+  background-size: fixed;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
