@@ -145,6 +145,7 @@ nav ul li a:hover {
 #about-us{
   background-image: linear-gradient( to bottom, #00172d, #14324b, #2b516a, #43718a, #5c93ab);
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 #about-us-img {
   position: relative;
