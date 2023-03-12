@@ -1,8 +1,8 @@
 const pictures = [
-  { url: "assets/img/M5.png", title: "Kupolis M5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 5m", height: "Visina: 4m", surface:"Povrsina: 38m", elements:"Elemenat: 120" },
-  { url: "assets/img/M6.png", title: "Kupolis M6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 6m", height: "Visina: 5m", surface:"Povrsina: 43m", elements:"Elemenat: 150" },
-  { url: "assets/img/M7.png", title: "Kupolis M7", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 7m", height: "Visina: 6m", surface:"Povrsina: 48m", elements:"Elemenat: 180" },
-  { url: "assets/img/M8.png", title: "Kupolis M8", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 8m", height: "Visina: 7m", surface:"Povrsina: 55m", elements:"Elemenat: 210" }
+  { url: "assets/img/m5.png", title: "Kupolis M5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 5m", height: "Visina: 4m", surface:"Povrsina: 38m", elements:"Elemenat: 120" },
+  { url: "assets/img/m6.png", title: "Kupolis M6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 6m", height: "Visina: 5m", surface:"Povrsina: 43m", elements:"Elemenat: 150" },
+  { url: "assets/img/m7.png", title: "Kupolis M7", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 7m", height: "Visina: 6m", surface:"Povrsina: 48m", elements:"Elemenat: 180" },
+  { url: "assets/img/m8.png", title: "Kupolis M8", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 8m", height: "Visina: 7m", surface:"Povrsina: 55m", elements:"Elemenat: 210" }
 ];
 
 const buttons = document.querySelectorAll(".model button");
@@ -34,6 +34,37 @@ buttons.forEach((button) => {
     button.classList.add("active");
   });
 });
+
+function change6(){
+  document.getElementById("type2-picture").src="assets/img/voda1.jpg";
+}
+function change7(){
+  document.getElementById("type2-picture").src="assets/img/voda2.jpg";
+}
+function change8(){
+  document.getElementById("type2-picture").src="assets/img/voda3.jpg";
+}
+function change9(){
+  document.getElementById("type2-picture").src="assets/img/voda4.jpg";
+}
+function change10(){
+  document.getElementById("type2-picture").src="assets/img/voda1.jpg";
+}
+function change11(){
+  document.getElementById("type3-picture").src="assets/img/naselje1.jpg";
+}
+function change12(){
+  document.getElementById("type3-picture").src="assets/img/naselje2.jpg";
+}
+function change13(){
+  document.getElementById("type3-picture").src="assets/img/naselje3.jpg";
+}
+function change14(){
+  document.getElementById("type3-picture").src="assets/img/naselje4.jpg";
+}
+function change15(){
+  document.getElementById("type3-picture").src="assets/img/naselje5.jpg";
+}
 /*
 const btnScrollToTop = document.querySelector(".btnScrollToTop");
 
@@ -45,6 +76,7 @@ btnScrollToTop.addEventListener("click", e => {
     behavior: "smooth"
   });
 });
+*/
 // toggle 'scroll to top' based on scroll position
 /*window.addEventListener('scroll', e => {
   if (window.scrollY > 275) {
@@ -64,7 +96,7 @@ window.addEventListener('scroll', e => {
   }
 });
 
-const animatedClassesLeft = ['.text', '#text', '.contact-information', '.proba1', '#heading'];
+const animatedClassesLeft = ['.model-text', '#text', '.contact-information', '.proba1', '#heading'];
 
 function animateOnScrollLeft() {
   animatedClassesLeft.forEach(className => {
@@ -243,5 +275,6 @@ window.AcquaintedWidgetDomain = 'https://getacquainted.co';
       lastScrollPosition = currentScrollPosition;
     });
 
+    
 
 
