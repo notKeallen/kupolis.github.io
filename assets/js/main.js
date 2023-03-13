@@ -1,37 +1,31 @@
-const pictures = [
-  { url: "assets/img/m5.png", title: "Kupolis M5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 5m", height: "Visina: 4m", surface:"Povrsina: 38m", elements:"Elemenat: 120" },
-  { url: "assets/img/m6.png", title: "Kupolis M6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 6m", height: "Visina: 5m", surface:"Povrsina: 43m", elements:"Elemenat: 150" },
-  { url: "assets/img/m7.png", title: "Kupolis M7", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 7m", height: "Visina: 6m", surface:"Povrsina: 48m", elements:"Elemenat: 180" },
-  { url: "assets/img/m8.png", title: "Kupolis M8", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat fermentum dolor, a sodales odio elementum ac. Donec aliquet, sapien et suscipit lobortis, elit ligula venenatis mi, nec mollis ante ipsum sit amet lacus. Proin est justo, porta non nunc at, efficitur ullamcorper metus. Nam non pretium eros, vel consectetur lacus. Suspendisse et volutpat ex.", diameter: "Precnik: 8m", height: "Visina: 7m", surface:"Povrsina: 55m", elements:"Elemenat: 210" }
-];
 
-const buttons = document.querySelectorAll(".model button");
-const picture = document.getElementById("picture");
-const title = document.getElementById("title");
-const description = document.getElementById("description");
-const diameter = document.getElementById("diameter");
-const height = document.getElementById("height");
-const surface = document.getElementById("surface");
-const elements = document.getElementById("elements");
+const img3 = document.querySelectorAll(".small-img3");
 
-buttons.forEach((button) => {
+img3.forEach((button) => {
   button.addEventListener("click", () => {
-    const index = parseInt(button.getAttribute("data-index"));
-    picture.src = pictures[index].url;
-    title.textContent = pictures[index].title;
-    description.textContent = pictures[index].description;
-    diameter.textContent = pictures[index].diameter;
-    height.textContent = pictures[index].height;
-    surface.textContent = pictures[index].surface;
-    elements.textContent = pictures[index].elements;
     
     // Remove active class from all buttons
-    buttons.forEach((btn) => {
-      btn.classList.remove("active");
+    img3.forEach((btn) => {
+      btn.classList.remove("img-active");
     });
     
     // Add active class to clicked button
-    button.classList.add("active");
+    button.classList.add("img-active");
+  });
+});
+
+const img2 = document.querySelectorAll(".small-img2");
+
+img2.forEach((button) => {
+  button.addEventListener("click", () => {
+    
+    // Remove active class from all buttons
+    img2.forEach((btn) => {
+      btn.classList.remove("img-active");
+    });
+    
+    // Add active class to clicked button
+    button.classList.add("img-active");
   });
 });
 
