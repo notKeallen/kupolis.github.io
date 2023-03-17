@@ -48,16 +48,12 @@ h1, h2{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
 }
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0px auto;
-}
-#about-us-link{
-  font-size: 45px;
-  padding-bottom: 50px;
 }
 .alignment{
   text-align: center;
@@ -104,7 +100,7 @@ nav ul li a:hover {
   align-items: end;
   font-size: 45px;
   transition: visibility 0s, opacity 2s ease;
-  background-image: linear-gradient(to top, #00172d, transparent);
+  /*background-image: linear-gradient(to top, #00172d, transparent);*/
 }
 .arrows-animation{
   animation: upndown .8s ease-in-out infinite;
@@ -119,6 +115,7 @@ nav ul li a:hover {
   color: #fff;
   font-size: 50px;
   text-align: left;
+  height: 500px;
 }
 
 #heading p {
@@ -146,42 +143,19 @@ nav ul li a:hover {
   margin-top: 50px; 
 }
 #about-us{
-  /*background-image: linear-gradient( to bottom, #00172d, #14324b, #2b516a, #43718a, #5c93ab);*/
   padding-top: 120px;
 }
-#about-us-img {
-  position: relative;
-  top: -20px;
-  left: -15px;
-}
-
-#about-us-img2 {
-  position: relative;
-  top: -20px;
-  left: 15px;
-}
-
-.image {
-  width: 49.5%;
-  float: left;
-  background-color: #5c93ab;
-  padding-right: 0.5%;
-}
-
 .text {
-  width: 40%;
-  float: left;
-  padding-left: 5%;
-  padding-right: 5%;
+  width: 35%;
   font-size: 18px;
   word-spacing: 3px;
   line-height: 25px;
-  text-align: left;
+  text-align: justify;
+  margin: 0 auto;
 }
 .boxes-container {
   width: 100%;
   height: 200px;
-  margin-top: 100px;
 }
 .boxes{
   width: 50%;
@@ -201,7 +175,8 @@ nav ul li a:hover {
 #models {
   width: 100%;
   /* background-color: #043454; */
-  height: 1600px;
+  height: 2000px;
+  padding-top: 100px;
 }
 
 .model {
@@ -237,11 +212,11 @@ nav ul li a:hover {
 .banners{
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 100px;
 }
 .banner{
-  width: 15%;
+  width: 20%;
   background-image: linear-gradient(to bottom,#00172d ,rgba(255,255,255,0.05));
   transition: 0.3s ease-in-out;
 }
@@ -253,16 +228,57 @@ nav ul li a:hover {
 }
 .banner-text{
   padding: 5%;
-  font-size: 14px;
   height: 100px;
+  margin-top: 20px;
 }
 .banner-text h3{
   font-size: 16px;
+}
+.banner p{
+  color: #a7d1e4;
+  font-size: 13px;
+  margin-top: 10px;
 }
 .banner:hover{
   transform: scale(1.1);
   background-image: none;
   background-color: rgba(255,255,255,0.05);
+}
+#about-us-img{
+  background-image: url(../img/tip13.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 50px;
+  height: 300px;
+}
+#about-us-text{
+  height: 950px;
+  width: 60%;
+  padding: 3%;
+  background-color: #334557;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -100px;
+  border: 2px solid #1a2f42;
+}
+#columns{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.col{
+  width: 46%;
+  text-align: justify;
+  line-height: 30px;
+}
+.col span{
+  font-weight: 600;
+}
+.col h3{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 #contact {
   height: 750px;
@@ -335,15 +351,19 @@ footer h3{
 }
 
 .picture {
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 500px;
 }
 
 .model-spec {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   margin-top: 100px;
+  height: 550px;
+}
+.model-spec h3{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
 }
 .model-spec:first-child{
   margin-top: 50px;
@@ -351,16 +371,6 @@ footer h3{
 #picture {
   width: 100%;
   transition-duration: 0.3s;
-}
-.model-text {
-  width: 18%;
-  height: 400px;
-}
-.text-reversed{
-  text-align: right;
-}
-.responsive-show{
-  display: none;
 }
 .full-picture{
   width: 83%;
@@ -373,7 +383,7 @@ footer h3{
 }
 .full-picture img{
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 .small-pictures{
@@ -383,7 +393,7 @@ footer h3{
 .small-pictures img{
   width: 100%;
   object-fit: cover;
-  height: 77px;
+  height: 97px;
   opacity: 0.5;
 }
 .small-pictures img:hover{
@@ -707,6 +717,7 @@ footer p{
   .boxes{
     float: none;
     width: 100%;
+    height: 150px;
   }
   .banner{
     float: left;
@@ -716,6 +727,9 @@ footer p{
   }
   .banner-img{
     height: 130px;
+  }
+  .banner-text{
+    margin-top: 0px;
   }
   #models{
     height: 2350px;
@@ -752,6 +766,9 @@ footer p{
   #models{
     height: 2600px;
   }
+  .banner-text{
+    height: 120px;
+  }
 }
 @media only screen and (max-width:520px){
   .image{
@@ -770,10 +787,26 @@ footer p{
   .content{
     height: 200px;
   }
+  .banner-img{
+    height: 100px;
+  }
+  .content{
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .content{
+    margin-bottom: 175px;
+  }
 }
 
 @media only screen and (max-width:405px){
   .small-pictures img{
     width: 18.99%;
   }
+}
+.drugi{
+  width: 90%;
+  text-align: justify;
 }
