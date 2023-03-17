@@ -29,6 +29,21 @@ img2.forEach((button) => {
   });
 });
 
+function change1(){
+  document.getElementById("type1-picture").src="assets/img/tip11.JPG";
+}
+function change2(){
+  document.getElementById("type1-picture").src="assets/img/tip12.JPG";
+}
+function change3(){
+  document.getElementById("type1-picture").src="assets/img/tip13.JPG";
+}
+function change4(){
+  document.getElementById("type1-picture").src="assets/img/tip14.JPG";
+}
+function change5(){
+  document.getElementById("type1-picture").src="assets/img/tip11.JPG";
+}
 function change6(){
   document.getElementById("type2-picture").src="assets/img/voda1.jpg";
 }
