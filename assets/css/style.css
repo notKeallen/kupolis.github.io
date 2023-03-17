@@ -142,9 +142,6 @@ nav ul li a:hover {
   height: 300px;
   margin-top: 50px; 
 }
-#about-us{
-  padding-top: 120px;
-}
 .text {
   width: 35%;
   font-size: 18px;
@@ -208,6 +205,7 @@ nav ul li a:hover {
 }
 #benefiti{
   text-align: center;
+  padding-bottom: 120px;
 }
 .banners{
   display: flex;
@@ -268,7 +266,7 @@ nav ul li a:hover {
   margin-top: 30px;
 }
 .col{
-  width: 46%;
+  width: 47%;
   text-align: justify;
   line-height: 30px;
 }
@@ -279,6 +277,31 @@ nav ul li a:hover {
   font-size: 25px;
   text-align: center;
   margin-bottom: 30px;
+}
+#team h2{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.workers{
+  display:flex;
+  width: 70%;
+  height: 100px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.worker p{
+  margin-top: 10px;
+  color: #5c93ab;
+}
+.worker{
+  width: 20%;
+  border-bottom: 1px solid #5c93ab;
+  height: 60px;
+  padding: 1.5%;
+  transition: 0.4s ease-in-out;
+}
+.worker:hover{
+  background-color: rgba(4,52,84,0.5);
 }
 #contact {
   height: 750px;
@@ -617,6 +640,15 @@ footer p{
   transition: transform 0.2s ease-out;
   box-shadow: none;
 }
+@media only screen and (max-width:1380px){
+  #about-us-text{
+    height: 950px;
+  }
+  .workers{
+    width: 80%;
+  }
+}
+
 
 @media only screen and (max-width:1200px){
   .container{
@@ -640,6 +672,9 @@ footer p{
   }
   .banner-img{
     height: 150px;
+  }
+  #about-us-text{
+    width: 90%;
   }
 }
 
@@ -670,21 +705,25 @@ footer p{
   .responsive-hide{
     display: none;
   }
-}
-@media only screen and (max-width:770px){
+  #about-us-text{
+    height: 1150px;
+  }
   .contact-information{
-    width: 60%;
+    width: 70%;
     float: none;
     margin: 0 auto;
+    text-align:center;
   }
   .contact-form{
-    width: 60%;
+    width: 70%;
     float: none;
     margin: 0 auto;
   }
   #contact{
     height: 1050px;
   }
+}
+@media only screen and (max-width:770px){
   svg{
     position: relative;
     top: 200px;
@@ -704,6 +743,18 @@ footer p{
   }
   #models{
     height: 2300px;
+  }
+  #about-us-text{
+    height: 1400px;
+  }
+  #columns{
+    display: inline-block;
+  }
+  .col{
+    width: 100%;
+  }
+  .workers{
+    width: 100%;
   }
 }
 @media only screen and (max-width:635px){
@@ -733,6 +784,29 @@ footer p{
   }
   #models{
     height: 2350px;
+  }
+  #about-us-img{
+    height: 400px;
+  }
+  #about-us-text{
+    height: 1550px;
+    top: -75px;
+  }
+  .workers{
+    display: block;
+  }
+  .worker h3{
+    font-size: 25px;
+  }
+  .worker{
+    width: 35%;
+    float: left;
+    margin-left: 8%;
+    height: 100px;
+    text-align: center;
+  }
+  #team{
+    height: 500px;
   }
 }
 @media only screen and (max-width:550px){
@@ -764,10 +838,13 @@ footer p{
     width: 19.11%;
   }
   #models{
-    height: 2600px;
+    height: 2300px;
   }
   .banner-text{
     height: 120px;
+  }
+  #about-us-text{
+    height: 1700px;
   }
 }
 @media only screen and (max-width:520px){
@@ -776,7 +853,6 @@ footer p{
   }
   .text{
     width: 90%;
-    text-align: center;
   }
   .model-text{
     height: 250px;
@@ -798,6 +874,9 @@ footer p{
 @media only screen and (max-width:450px){
   .content{
     margin-bottom: 175px;
+  }
+  #about-us-text{
+    height: 2100px;
   }
 }
 
