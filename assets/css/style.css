@@ -174,7 +174,7 @@ fieldset{
   float: right;
   padding:3%;
   background-color: rgba(0,0,0,0.6);
-  margin-top: 10%;
+  margin-top: 20%;
 }
 .darken{
   width: 100%;
@@ -220,7 +220,7 @@ h2::after {
 	border-right: 2px;
 	border-left: 0;
 	border-style: solid;
-	border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
+	border-image: linear-gradient(to bottom, #404545, #eee, #404545) 1 100%;
   text-align: center;
 }
 .box1:last-child {
@@ -246,13 +246,13 @@ h2::after {
 .box1 img{
   width: 100%;
 }
-#usluge{
+#usluge, #benefiti{
   width: 100%;
   height: 600px;
   background-color: #404545;
   padding-top: 100px;
 }
-#usluge h2{
+#usluge h2, #benefiti h2{
   margin-bottom: 100px;
 }
 .banners{
@@ -288,6 +288,18 @@ h2::after {
   margin-top: 15px;
   color: #8f9a9a;
 }
+.banner-benefit{
+  height: 200px;
+  width: 18.5%;
+  padding-top: 0;
+  padding: 0.5%;
+}
+.banner-benefit p{
+  font-size: 15px;
+}
+.banner-benefit h3{
+  color:#456981;
+}
 #domes{
   width: 100%;
   height: 1080px;
@@ -297,6 +309,26 @@ h2::after {
 }
 .fieldset-2{
   float: left;
+}
+#ponuda{
+  background-color: #404545;
+  width: 100%;
+  padding-bottom: 100px;
+}
+#ponuda h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #eee;
+}
+#ponuda p{
+  color: #8f9a9a
+}
+.cena{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  font-style: italic;
 }
 #team h2{
   margin-bottom: 100px;
@@ -321,137 +353,78 @@ h2::after {
   transition: 0.4s ease-in-out;
 }
 #contact {
-  height: 750px;
+  height: 550px;
   /* background-image: linear-gradient(to bottom, #043454, #093858, #134060, #1e4c6b, #2c5b79, #437692, #5c93ab); */
   padding-top: 100px;
 }
 .contact-information {
-  width: 20%;
-  height: 300px;
+  width: 30%;
+  height: 400px;
   float: left;
-  padding: 5%;
-  background-color: rgba(255,255,255,0.1);
+  padding-top: 5%;
+  background-color: #164b62;
 }
 .contact-information h2{
   font-size: 35px;
+  color: #fff;
+}
+.contact-information p{
+  color: #fff;
 }
 footer{
-  background-color: #fff;
-  height: 175px;
   width: 100%;
-  z-index: 10;
-  margin-top: 50px;
-  border-top: 2px solid #043454;
-  padding-top: 10%;
-  display: flex;
-  justify-content: space-around;
+  height: 300px;
+  background-color: #404545;
 }
-.footer-banners{
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
+.footer-logo{
+  width: 30%;
+  float: left;
 }
-footer .logo{
-  width: 50%;
-}
-footer p{
-  color: #043454;
-  margin-top: 15px;
-  transition: 0.3s ease-in-out;
+.footer-links{
+  width: 20%;
+  height: 200px;
+  float: left;
+  margin-left: 20%;
 }
 footer h3{
-  color: #043454;
+  margin-bottom: 20px;
+  color: #456981;
 }
-.footer-about-us p:hover{
-  transform: scale(1.1);
+footer p{
+  margin-bottom: 15px;
+  margin-left: 5px;
+  color: #eee;
+  transition: 0.3s ease-in-out;
+}
+footer p:hover{
+  margin-left: 15px;
 }
 .social{
-  margin-top: 15px;
-  font-size: 25px;
+  width: 20%;
+  float: right;
 }
 .copyright{
   text-align: center;
-  background-color: #fff;
+  background-color: #deefef;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .copyright p{
   color:#043454;
 }
 .contact-form {
   width: 60%;
-  height: 300px;
+  height: 400px;
   padding: 5%;
+  padding-bottom: 0;
   float: left;
-  background-color: rgba(255,255,255,0.2);
+  background-color: #456981;
   margin-bottom: 150px;
 }
-
-.headings {
-  font-size: 35px;
-}
-
-.picture {
-  width: 100%;
-  height: 500px;
-}
-
-.model-spec {
-  width: 100%;
-  margin-top: 100px;
-  height: 550px;
-}
-.model-spec h3{
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 30px;
-}
-.model-spec:first-child{
-  margin-top: 50px;
-}
-#picture {
-  width: 100%;
-  transition-duration: 0.3s;
-}
-.full-picture{
-  width: 83%;
-  float: left;
-  margin-right: 2%;
-}
-.full-picture-reversed{
-  margin-right: 0;
-  margin-left: 2%;
-}
-.full-picture img{
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-.small-pictures{
-  float: left;
-  width: 15%;
-}
-.small-pictures img{
-  width: 100%;
-  object-fit: cover;
-  height: 97px;
-  opacity: 0.5;
-}
-.small-pictures img:hover{
-  cursor: pointer;
-  opacity: 1;
-}
-.small-pictures .img-active{
-  opacity: 1;
-}
 #title {
-  color: #fff;
+  color: #eee;
   font-size: 20px;
 }
-
-#description {
-  color: #fff;
-  margin-top: 30px;
-}
-
 .email-form {
   display: flex;
   justify-content: space-between;
@@ -460,7 +433,6 @@ footer h3{
   width: 100%;
   height: 35px;
 }
-
 #email {
   width: 100%;
   height: 35px;
@@ -468,7 +440,7 @@ footer h3{
 input, textarea {
   border: 0px;
   background-color: transparent;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #eee;
   font-size: 15px;
   padding: 0.5%;
   resize: none;
@@ -484,7 +456,7 @@ label{
   position: absolute;
   top: 7px;
   left: 5px;
-  color: #fff;
+  color: #eee;
   display: flex;
   align-items: center;
   cursor: text;
@@ -499,7 +471,7 @@ input:valid +label{
   pointer-events: none;
 }
 ::placeholder {
-  color: #fff;
+  color: #eee;
   font-size: 15px;
 }
 
@@ -514,18 +486,19 @@ input:valid +label{
 }
 
 #send{
-  color: #fff;
+  color: #eee;
   padding: 1%;
   font-size: 16px;
   cursor: pointer;
   margin-top: 30px;
-  border: 1px solid #fff;
+  border: 1px solid #eee;
   font-weight: 500;
   transition: .6s ease-in-out;
 }
 #send:hover{
-  background-color: #fff;
-  color: #2c5b79;
+  background-color: #164b62;
+  color: #eee;
+  border: 1px solid #164b62;
 }
 .kontakti {
   margin-top: 5%;
@@ -543,20 +516,19 @@ input:valid +label{
 
 .awesome-contacts {
   margin-right: 10px;
-  margin-left: 5px;
+  margin-left: 5%;
   font-size: 20px;
+  color: #456981;
 }
 .awesome-footer{
-  color: #043454;
   margin-right: 10px;
+  font-size: 20px;
+  color: #456981;
 }
 .contact-description p {
   margin-top: 30px;
 }
 
-footer p{
-  color: black;
-}
 @keyframes upndown{
   0% {transform:scale(1.0); opacity: 1;}
   50% {bottom: 1.5%; transform:scale(0.9); opacity: 0.6;}
