@@ -867,6 +867,11 @@ input:valid +label{
   #background{
     background-position: -350px 0px;
   }
+  @supports (-webkit-touch-callout: none) {
+    #background{
+      background-position: -500px 0;
+    }
+  }
   #domes{
     background-position: -300px 0px;
   }
