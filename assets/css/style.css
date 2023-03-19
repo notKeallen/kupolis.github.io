@@ -899,11 +899,6 @@ footer{
   #background{
     background-position: -350px 0px;
   }
-  @supports (-webkit-touch-callout: none) {
-    #background{
-      background-position: -900px 0px;
-    }
-  }
   #domes{
     background-position: -300px 0px;
   }
