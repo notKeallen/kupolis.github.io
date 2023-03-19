@@ -1,4 +1,4 @@
-const animatedClassesLeft = ['.model-text', '#text', '.contact-information', '.proba1', '#heading'];
+const animatedClassesLeft = ['.contact-information', '#heading'];
 
 function animateOnScrollLeft() {
   animatedClassesLeft.forEach(className => {
@@ -31,7 +31,7 @@ window.addEventListener('scroll', e => {
   window.previousScrollY = scrollY;
 });
 
-const animatedClassesRight = ['.image', '.buttons','.picture','.contact-form'];
+const animatedClassesRight = ['.contact-form'];
 
 function animateOnScrollRight() {
   animatedClassesRight.forEach(className => {
@@ -71,7 +71,7 @@ function animateOnScrollUp() {
   });
 }
 
-const animatedClassesDown = ['.spec', '#about-us-link', '.box'];
+const animatedClassesDown = ['.fieldset', '.box','.boxes1','.banners','.workers'];
 
 function animateOnScrollDown() {
   animatedClassesDown.forEach(className => {
@@ -81,7 +81,7 @@ function animateOnScrollDown() {
       const elementBottom = element.getBoundingClientRect().bottom;
       const viewPortHeight = window.innerHeight;
 
-      if (elementPosition < viewPortHeight - 1 && elementBottom > 0) {
+      if (elementPosition < viewPortHeight + 100 && elementBottom > 0) {
         element.classList.add('landing-from-down');
       } 
       else{
