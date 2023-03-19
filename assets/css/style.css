@@ -648,6 +648,7 @@ input:valid +label{
 @supports (-webkit-touch-callout: none) {
   #background{
     background-attachment: scroll;
+    background-position: -200px 0;
   }
   #about-us{
     background-attachment: scroll;
