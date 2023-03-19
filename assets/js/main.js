@@ -71,7 +71,7 @@ function animateOnScrollUp() {
   });
 }
 
-const animatedClassesDown = ['.fieldset', '.box','.boxes1','.banners','.workers'];
+const animatedClassesDown = ['.fieldset', '.box','.boxes1','.banners'];
 
 function animateOnScrollDown() {
   animatedClassesDown.forEach(className => {
@@ -147,12 +147,25 @@ subjectInput.addEventListener('input', function() {
   }
 });
 
-window.AcquaintedWidgetDomain = 'https://getacquainted.co';
+/*window.AcquaintedWidgetDomain = 'https://getacquainted.co';
     window.AcquaintedWidgetId = 'ff153c83-f590-4e95-bd01-b89025f64e4f';
     var s = document.createElement('script'); 
     s.src = AcquaintedWidgetDomain + '/js/widget-loader.js';
     s.async = true;
     document.body.appendChild(s);
+*/
+    let menuBox = document.getElementById("menuBox");
+    let menuIcon = document.getElementById("menuIcon");
 
+    menuIcon.onclick = function(){
+      menuBox.classList.toggle("open-menu");
+
+      if(menuBox.classList.contains("open-menu")){
+        menuIcon.src = "assets/img/iks.png";
+      }
+      else{
+        menuIcon.src="assets/img/hamburger.png"
+      }
+    }
 
 
