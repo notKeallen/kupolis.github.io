@@ -645,7 +645,11 @@ input:valid +label{
   transition: transform 0.2s ease-out;
   box-shadow: none;
 }
-
+@supports (-webkit-touch-callout: none) {
+  *{
+    background-attachment: scroll;
+  }
+}
 @media only screen and (max-width:1460px){
   fieldset{
     width: 45%;
