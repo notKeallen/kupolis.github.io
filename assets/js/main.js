@@ -168,4 +168,16 @@ subjectInput.addEventListener('input', function() {
       }
     }
 
+    const responsiveMenus = document.querySelectorAll('.responsiveMenu');
+    for (let i = 0; i < responsiveMenus.length; i++) {
+      responsiveMenus[i].addEventListener('click', function() {
+        menuBox.classList.toggle('open-menu');
+        if (menuBox.classList.contains('open-menu')) {
+          menuIcon.src = 'assets/img/iks.png';
+        } else {
+          menuIcon.src = 'assets/img/hamburger.png';
+        }
+      });
+    }
+
 
