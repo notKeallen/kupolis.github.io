@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700");
-
+/* Tags */
 html {
   scroll-behavior: smooth;
 }
@@ -18,50 +18,99 @@ body{
 a {
   text-decoration: none;
 }
-header{
-  background-color: #164b62;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
-  transition: 0.5s ease-in-out;
-  position: fixed;
-  z-index: 1000;
-}
-header.hide{
-    opacity: 0;
-    visibility: hidden;
-}
 h1{
   color: #456981;
   font-size: 130px;
   font-family: 'Kanit', sans-serif;
 }
-#background {
-  background-image: url(../img/pozadina.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  height: 200vh;
-  width: 100%;
+h2 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-align: center;
+	font-family: Lora, serif;
+	font-weight: 200;
 }
-#background p{
-  color: #deefef;
+h2::before {
+	content: '─';
+	margin-right: 0.6em;
+	color: #686868;
+}
+h2::after {
+	content: '─';
+	margin-left: 0.6em;
+	color: #686868;
 }
 .container {
   width: 85%;
   margin: 0px auto;
 }
-.alignment{
-  text-align: center;
+legend img{
+  width: 70px;
+}
+/* Background */
+.text {
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 110px;
+  font-weight: 700;
+  color: #deefef;
+  text-shadow: 1px 1px 1px #164b62,
+      1px 2px 1px #164b62,
+      1px 3px 1px #164b62,
+      1px 4px 1px #164b62,
+      1px 5px 1px #164b62,
+      1px 6px 1px #164b62,
+      1px 7px 1px #164b62,
+      1px 8px 1px #164b62,
+      1px 9px 1px #164b62,
+      1px 10px 1px #164b62,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+  margin-left: 45px;
+}
+.text2{
+  font-size: 30px;
+  float: left;
+  margin-left: 55px;
+  text-shadow: 1px 1px 1px #164b62,
+  1px 2px 1px #164b62,
+  1px 3px 1px #164b62,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+  color: #deefef;
+}
+#background {
+  background-image: url(../img/pozadina.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  height: 100vh;
+  width: 100%;
+}
+
+/* Header & Navbar */
+
+header{
+  background-color: #164b62;
+  width: 100%;
+  height: 45px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.5);
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  z-index: 1000;
 }
 nav {
-  width: 60%;
+  width: 70%;
   float: right;
   text-align: right;
   color:#00172d;
   padding-top: 10px;
+  margin-right: 5%;
 }
 nav ul {
   list-style-type: none;
@@ -78,17 +127,14 @@ nav ul li a:hover {
   color: #456981;
 }
 .logo {
-  width: 15%;
+  width: 20%;
   float: left;
   background-color: #456981;
   position: absolute;
-  height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 100%;
 }
 .logo img{
   width: 100%;
-  margin: 0 auto;
 }
 .hamburger{
   width: 5%;
@@ -139,37 +185,12 @@ nav ul li a:hover {
   z-index: 200000;
 }
 #heading {
-  padding-top: 10%;
+  padding-top: 8%;
   font-size: 50px;
   text-align: left;
   height: 800px;
 }
-
-#heading p {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 20px;
-  font-family: 'Kanit', sans-serif;
-  text-transform: uppercase;
-  color: #164b62;
-}
-.quote{
-  width: 40%;
-  font-style: italic;
-  margin:0 auto;
-}
-.quote fieldset{
-  float: none;
-  width: 100%;
-  margin-top: 0;
-  padding-top: 0;
-  line-height: 25px;
-}
-.quotation{
-  color:#456981;
-  float: right;
-  font-size: 20px;
-}
+/* Zasto Kupolis */
 .boxes-container {
   width: 100%;
   height: 200px;
@@ -187,65 +208,6 @@ nav ul li a:hover {
 .box span {
   font-size: 50px;
   font-weight: 600;
-}
-#benefiti-link{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-#benefiti{
-  text-align: center;
-  padding-bottom: 120px;
-  width: 60%;
-  margin: 0 auto;
-}
-#about-us{
-  height: 1080px;
-  background-image: url(../img/naselje4.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-#about-us p, #domes p{
-  color: #fff;
-  line-height: 25px;
-  text-align: justify;
-}
-#about-us h2, #domes h2, #ponuda h2, #benefiti h2, #usluge h2{
-  color: #fff;
-  margin-bottom: 20px;
-}
-fieldset{
-  width: 40%;
-  border: 2px solid #fff;
-  float: right;
-  padding:3%;
-  background-color: rgba(0,0,0,0.6);
-  margin-top: 20%;
-}
-.darken{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.3);
-}
-.benefiti {
-	padding: 5vw;
-}
-h2 {
-	font-size: 2.5em;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	text-align: center;
-	font-family: Lora, serif;
-	font-weight: 200;
-}
-h2::before {
-	content: '─';
-	margin-right: 0.6em;
-	color: #686868;
-}
-h2::after {
-	content: '─';
-	margin-left: 0.6em;
-	color: #686868;
 }
 .boxes1 {
 	margin-top: 100px;
@@ -290,6 +252,57 @@ h2::after {
 .box1 img{
   width: 100%;
 }
+.box1 i{
+  font-size: 30px;
+}
+/* O Nama */
+#about-us{
+  height: 1080px;
+  background-image: url(../img/naselje4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about-us p, #domes p{
+  color: #fff;
+  line-height: 25px;
+  text-align: justify;
+}
+#about-us h2, #domes h2, #ponuda h2, #benefiti h2, #usluge h2{
+  color: #fff;
+  margin-bottom: 20px;
+}
+fieldset{
+  width: 40%;
+  border: 2px solid #fff;
+  float: right;
+  padding:3%;
+  background-color: rgba(0,0,0,0.6);
+  margin-top: 20%;
+}
+.darken{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Benefiti */
+
+#benefiti-link{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#benefiti{
+  text-align: center;
+  padding-bottom: 120px;
+  width: 60%;
+  margin: 0 auto;
+}
+.benefiti {
+	padding: 5vw;
+}
+
+/* Usluge */
+
 #usluge, #benefiti{
   width: 100%;
   height: 600px;
@@ -352,6 +365,7 @@ h2::after {
   color:#456981;
   font-size: 23px;
 }
+/* O Kupolama */
 #domes{
   width: 100%;
   height: 1080px;
@@ -362,6 +376,7 @@ h2::after {
 .fieldset-2{
   float: left;
 }
+/* Ponuda */
 #ponuda{
   background-color: #404545;
   width: 100%;
@@ -389,6 +404,7 @@ h2::after {
 	border-image: linear-gradient(to right, #404545, #eee, #404545) 1;
   padding: 3%;
 }
+/* Panorama */
 #panorama{
   height: 500px;
   width: 100%;
@@ -396,11 +412,9 @@ h2::after {
   background-size: cover;
   background-attachment: fixed;
 }
-#panorama iframe{
-  width: 100%;
-  height: 500px;
-  border: 0;
-}
+
+/* Nas Tim */
+
 #team h2{
   margin-bottom: 100px;
   margin-top: 100px;
@@ -423,10 +437,40 @@ h2::after {
   padding: 1.5%;
   transition: 0.4s ease-in-out;
 }
+.quote{
+  width: 40%;
+  font-style: italic;
+  margin:0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.quote fieldset{
+  float: none;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 25px;
+  background-color: #deefef;
+  border: 2px solid #164b62;
+}
+.quotation{
+  color:#164b62;
+  float: right;
+  font-size: 20px;
+}
+/* Kontakt */
 #contact {
   height: 550px;
-  /* background-image: linear-gradient(to bottom, #043454, #093858, #134060, #1e4c6b, #2c5b79, #437692, #5c93ab); */
   padding-top: 100px;
+}
+.contact-form {
+  width: 60%;
+  height: 400px;
+  padding: 5%;
+  padding-bottom: 0;
+  float: left;
+  background-color: #456981;
+  margin-bottom: 150px;
 }
 .contact-information {
   width: 30%;
@@ -441,32 +485,6 @@ h2::after {
 }
 .contact-information p{
   color: #fff;
-}
-.social i{
-  margin-left: 5%;
-  font-size: 30px;
-  margin-top: 20px;
-}
-.copyright{
-  text-align: center;
-  width: 100%;
-  height: 100px;
-}
-.copyright p{
-  color:#164b62;
-}
-.contact-form {
-  width: 60%;
-  height: 400px;
-  padding: 5%;
-  padding-bottom: 0;
-  float: left;
-  background-color: #456981;
-  margin-bottom: 150px;
-}
-#title {
-  color: #eee;
-  font-size: 20px;
 }
 .email-form {
   display: flex;
@@ -523,11 +541,6 @@ input:valid +label{
   margin-top: 50px;
 }
 
-#tekst {
-  width: 100%;
-  height: 100px;
-}
-
 #send{
   color: #eee;
   padding: 1%;
@@ -546,6 +559,28 @@ input:valid +label{
 .kontakti {
   margin-top: 5%;
 }
+.contact-description p {
+  margin-top: 30px;
+}
+.invalid{
+  border-bottom: 2px solid red;
+}
+/* Footer */
+
+footer{
+  width: 100%;
+}
+.copyright{
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+.copyright p{
+  color:#164b62;
+}
+
+/* Fonts awesome */
+
 .awesome {
   font-size: 20px;
   color: #456981;
@@ -557,26 +592,14 @@ input:valid +label{
   font-size: 20px;
   color: #456981;
 }
-.contact-description p {
-  margin-top: 30px;
-}
 
-@keyframes upndown{
-  0% {transform:scale(1.0); opacity: 1;}
-  50% {bottom: 1.5%; transform:scale(0.9); opacity: 0.6;}
-  100% {transform:scale(1.0); opacity: 1;}
-}
-@keyframes pulsatehover {
-  0%   { opacity: 1; }
-  50%  { opacity: .4; transform:scale(1.2); }
-  100% { opacity: 1; }
-}
+/* Animacije */
+
 .landing-from-left {
   opacity: 0;
   transform: translateX(-20%);
   animation: landFromLeft 1s ease-out forwards;
 }
-
 @keyframes landFromLeft {
   from {
     opacity: 0;
@@ -637,14 +660,9 @@ input:valid +label{
   transform: translateY(-30%);
   animation: landFromUp 1s ease-out forwards;
 }
-.invalid{
-  border-bottom: 2px solid red;
-}
-.hide-header {
-  transform: translateY(-100%);
-  transition: transform 0.2s ease-out;
-  box-shadow: none;
-}
+
+/* Responsive CSS*/
+
 @supports (-webkit-touch-callout: none) {
   #background{
     background-attachment: scroll;
@@ -823,10 +841,11 @@ input:valid +label{
     text-align: center;
   }
   #team{
-    height: 700px;
+    height: 1000px;
   }
   .quote{
     width: 75%;
+    margin-top: 0;
   }
   .boxes1{
     display: inline-block;
@@ -836,6 +855,15 @@ input:valid +label{
     width: 90%;
     padding: 5%;
     border: 0;
+  }
+  .text{
+    font-size: 90px;
+    margin: 0;
+  }
+  .text2{
+    margin: 0;
+    margin-left: 7px;
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width:550px){
@@ -862,6 +890,10 @@ input:valid +label{
     width: 80%;
     margin: 0 auto;
   }
+  .text{
+    font-size: 80px;
+    margin: 0;
+  }
 }
 @media only screen and (max-width:450px){
   #background{
@@ -876,7 +908,7 @@ input:valid +label{
     background-position: -300px 0px;
   }
   #panorama{
-    background-position: -330px 0px;
+    background-position: -430px 0px;
   }
   fieldset{
     width: 94%;
@@ -907,13 +939,20 @@ input:valid +label{
     height: 120px;
     text-align: center;
   }
-  h1{
-    font-size: 100px;
+  .text{
+    font-size: 70px;
+    margin: 0;
+  }
+  .text2{
+    margin: 0;
+    margin-left: 7px;
+    margin-top: 10px;
   }
   .quote{
-    width: 93%;
+    width: 80%;
     margin:0;
-    margin-top: 500px;
+    margin-top: 400px;
+    margin-left: 8%;
   }
   h2::before {
     content: none;
@@ -927,7 +966,7 @@ input:valid +label{
     width: 92%;
   }
   #heading{
-    padding-top: 40%;
+    padding-top: 30%;
     height: 300px;
   }
   .hamburger{
