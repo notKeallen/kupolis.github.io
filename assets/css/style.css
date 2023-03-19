@@ -869,7 +869,7 @@ input:valid +label{
   }
   @supports (-webkit-touch-callout: none) {
     #background{
-      background-position: -500px 0;
+      background-position: -900px 0px;
     }
   }
   #domes{
