@@ -565,6 +565,9 @@ input:valid +label{
 .invalid{
   border-bottom: 2px solid red;
 }
+#tekst{
+  width: 100%;
+}
 /* Footer */
 
 footer{
