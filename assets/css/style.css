@@ -646,7 +646,16 @@ input:valid +label{
   box-shadow: none;
 }
 @supports (-webkit-touch-callout: none) {
-  *{
+  #background{
+    background-attachment: scroll;
+  }
+  #about-us{
+    background-attachment: scroll;
+  }
+  #domes{
+    background-attachment: scroll;
+  }
+  #panorama{
     background-attachment: scroll;
   }
 }
