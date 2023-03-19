@@ -4,14 +4,6 @@
   font-family: Lato, sans-serif;
   color: #000;
 }
-@font-face{
-	src: url('../fonts/Righteous/Righteous-Regular.ttf');
-	font-family:'Righteous';
-}
-@font-face{
-	src: url('../fonts/Specimen/PublicSans-Regular.ttf');
-	font-family:'Specimen';
-}
 @import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700");
 
@@ -39,15 +31,23 @@ header.hide{
     opacity: 0;
     visibility: hidden;
 }
+.eko{
+  float: right;
+  width: 6%;
+}
+.eko img{
+  width: 100%;
+}
 h1{
   color: #fff;
+  font-size: 120px;
 }
 #background {
   background-image: url(../img/pozadina.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 180vh;
+  height: 100vh;
   width: 100%;
 }
 #background p{
@@ -79,7 +79,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #8f9a9a;
+  color: #eee;
 }
 
 nav ul li a:hover {
@@ -90,17 +90,21 @@ nav ul li a:hover {
   float: left;
   background-color: #456981;
   position: absolute;
-  height: 50px;
-  padding: 10px;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .logo img{
   width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top:-25px;
 }
 #heading {
-  padding-top: 25%;
+  padding-top: 10%;
   font-size: 50px;
   text-align: left;
-  height: 450px;
+  height: 200px;
 }
 
 #heading p {
@@ -110,7 +114,6 @@ nav ul li a:hover {
 }
 .quote{
   width: 40%;
-  margin: 0 auto;
   font-style: italic;
 } 
 .quote fieldset{
@@ -164,7 +167,7 @@ nav ul li a:hover {
   line-height: 25px;
   text-align: justify;
 }
-#about-us h2, #domes h2{
+#about-us h2, #domes h2, #ponuda h2, #benefiti h2, #usluge h2{
   color: #fff;
   margin-bottom: 20px;
 }
@@ -186,7 +189,6 @@ fieldset{
 }
 h2 {
 	font-size: 2.5em;
-/* 	margin-bottom: 2em; */
 	text-transform: uppercase;
 	letter-spacing: 10px;
 	text-align: center;
@@ -255,6 +257,13 @@ h2::after {
 #usluge h2, #benefiti h2{
   margin-bottom: 100px;
 }
+#usluge p{
+  font-size: 20px;
+  font-weight: 600;
+}
+#usluge .awesome{
+  font-size: 30px;
+}
 .banners{
   width:100%;
   display: flex;
@@ -299,6 +308,7 @@ h2::after {
 }
 .banner-benefit h3{
   color:#456981;
+  font-size: 23px;
 }
 #domes{
   width: 100%;
@@ -314,6 +324,7 @@ h2::after {
   background-color: #404545;
   width: 100%;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 #ponuda h3{
   margin-top: 20px;
@@ -329,6 +340,17 @@ h2::after {
   margin-top: 100px;
   text-align: center;
   font-style: italic;
+  font-weight: 650;
+  font-size: 25px;
+}
+#panorama{
+  height: 500px;
+  width: 100%;
+}
+#panorama iframe{
+  width: 100%;
+  height: 500px;
+  border: 0;
 }
 #team h2{
   margin-bottom: 100px;
@@ -371,46 +393,13 @@ h2::after {
 .contact-information p{
   color: #fff;
 }
-footer{
-  width: 100%;
-  height: 300px;
-  background-color: #404545;
-}
-.footer-logo{
-  width: 30%;
-  float: left;
-}
-.footer-links{
-  width: 20%;
-  height: 200px;
-  float: left;
-  margin-left: 20%;
-}
-footer h3{
-  margin-bottom: 20px;
-  color: #456981;
-}
-footer p{
-  margin-bottom: 15px;
-  margin-left: 5px;
-  color: #eee;
-  transition: 0.3s ease-in-out;
-}
-footer p:hover{
-  margin-left: 15px;
-}
-.social{
-  width: 20%;
-  float: right;
-}
 .copyright{
   text-align: center;
-  background-color: #deefef;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  width: 100%;
+  height: 100px;
 }
 .copyright p{
-  color:#043454;
+  color:#164b62;
 }
 .contact-form {
   width: 60%;
@@ -520,11 +509,6 @@ input:valid +label{
   font-size: 20px;
   color: #456981;
 }
-.awesome-footer{
-  margin-right: 10px;
-  font-size: 20px;
-  color: #456981;
-}
 .contact-description p {
   margin-top: 30px;
 }
@@ -559,7 +543,7 @@ input:valid +label{
 @keyframes landFromRight {
   from {
     opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(10%);
   }
   to {
     opacity: 1;
@@ -576,7 +560,7 @@ input:valid +label{
 @keyframes landFromDown {
   from {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(20%);
   }
   to {
     opacity: 1;
@@ -587,12 +571,12 @@ input:valid +label{
 .landing-from-down {
   opacity: 0;
   transform: translateY(30%);
-  animation: landFromDown 1s ease-out forwards;
+  animation: landFromDown 1.5s ease-out forwards;
 }
 @keyframes landFromUp {
   from {
     opacity: 0;
-    transform: translateY(-30%);
+    transform: translateY(-40%);
   }
   to {
     opacity: 1;
