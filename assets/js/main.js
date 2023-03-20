@@ -180,5 +180,9 @@ subjectInput.addEventListener('input', function() {
       });
     }
 
+      var screenHeight = screen.height;
+
+    document.getElementById('background').setAttribute("style","height:"+screenHeight+"px")
+
 
 
