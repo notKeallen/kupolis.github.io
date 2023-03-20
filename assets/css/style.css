@@ -11,12 +11,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700");
 
-/* VAR */
-
-:root {
-  --doc-height: 100%;
- }
-
 /* Tags */
 
 html {
@@ -99,8 +93,7 @@ legend img{
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  height: 100vh; /* fallback for Js load */
-  height: var(--doc-height);
+  height: 100dvh;
   width: 100%;
 }
 
